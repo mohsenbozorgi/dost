@@ -21,12 +21,12 @@ start_time = str(strftime("%Y-%m-%d %H:%M:%S", gmtime()))
 os.system("figlet special team")
 time.sleep(int(3))
 clear()
-bot = telebot.TeleBot("Token")
+bot = telebot.TeleBot("287406528:AAH-rMuynCLEm6Q5En81nP-DzeyPjZIvB48")
 user = bot.get_me()
 botname = user.username
 print " @{} started on {}".format(botname,start_time)
 channel = "@ user name channel"
-sudo = {"123755887"}
+sudo = {"131636155"}
 def is_sudo(user):
     for i in sudo:
         if int(user) == int(i):
@@ -51,7 +51,7 @@ def send_something(message):
     if bot.get_chat_member(channel, message.from_user.id).status == "left" or bot.get_chat_member(channel, message.from_user.id).status == "kicked":
         mk = '''
 شما ابتدا باید در کانال ما عضو شوید:
-> @special_programming <
+> @signalteam <
 پس از عضویت در کانال میتوانید ازین دکمه استفاده نمایید😀❤️👌
         '''
         bot.reply_to(message, mk)
@@ -73,7 +73,7 @@ def send_something(message):
     loll = '''
 لینک مخصوص شما برای اینکه بدونی  دوستات چقدر میشناسننت ؟ چه حسی بهت دارن و چی تو دلشون مونده که یهت بگن ؟ چه جنبه از شخصیتتو دوس دارن و ... ؟ رو در پیام پایین برات ساختم 🙏😍
 میتونی اون لینکو یا کل پیام رو برای دوستات فوروارد کنی یا توی اینستا و... به اشتراک بذاری تا دوستات بتونن در مورد تو پرسشنامه رو پر کنند  👌
-⭕️به محض اینکه هر دوستیت برات پرسشنامه رو پر کرد میتونی برات همه ی جواب هایی که داده رو ارسال میکنم (برای اینکه فرستنده تست ها رو ببینی  لطفا داخل کانال ما عضو شو 👈 @special_programming )
+⭕️به محض اینکه هر دوستیت برات پرسشنامه رو پر کرد میتونی برات همه ی جواب هایی که داده رو ارسال میکنم (برای اینکه فرستنده تست ها رو ببینی  لطفا داخل کانال ما عضو شو 👈 @signalteam )
     '''
     lll = '''
     سلام دوست من 😊 خوبی ؟ 🙏
@@ -212,7 +212,7 @@ def prc_5(message):
         mk = '''
 شما یک پیام جدید از طرف دوستتان دریافت کردید😍❤️.
 برای دیدن پیام ابتدا در کانال
-@special_programming
+@signalteam
 عضو بشید😅
 سپس میتونید با دکمه:
 😬 نمایش کل تست ها
@@ -245,7 +245,7 @@ def send_something(message):
     bot.send_message(message.from_user.id, st, reply_markup=markup)
 @bot.message_handler(func=lambda msg: msg.text.encode("utf-8") == "😍 عضویت در کانال")
 def send_something(message):
-    bot.reply_to(message, "join @special_programming (:")
+    bot.reply_to(message, "join @signalteam (:")
 
 @bot.message_handler(func=lambda msg: msg.text.encode("utf-8") == "😍 برو بریم")
 def send_something(message):
